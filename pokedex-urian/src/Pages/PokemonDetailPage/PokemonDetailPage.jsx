@@ -45,7 +45,7 @@ export default function PokemonsDetailPage(){
                  <PText>{stat.stat.name}</PText> <Progress value={stat.base_stat} />
                 </>)
                 })}
-                
+                 
                 </StatsInfo>
             </StatsBox>
             <MovesBox>
