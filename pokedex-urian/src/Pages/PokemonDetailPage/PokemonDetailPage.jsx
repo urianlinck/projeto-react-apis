@@ -34,8 +34,8 @@ export default function PokemonsDetailPage(){
             </TitleDetails>
             <Pokeball src={pokeball}/>
             <PokemonImage src={details.sprites?.other["official-artwork"].front_default}/>
-            <PokeFace src={details.sprites.front_default}></PokeFace>
-            <PokeBack src={details.sprites.back_default}></PokeBack>
+            <PokeFace src={details.sprites?.front_default}></PokeFace>
+            <PokeBack src={details.sprites?.back_default}></PokeBack>
             <StatsBox>
                 <TitleMoves>Base Stats</TitleMoves>
                 <StatsInfo>
@@ -45,7 +45,7 @@ export default function PokemonsDetailPage(){
                  <PText>{stat.stat.name}</PText> <Progress value={stat.base_stat} />
                 </>)
                 })}
-                
+                 
                 </StatsInfo>
             </StatsBox>
             <MovesBox>
